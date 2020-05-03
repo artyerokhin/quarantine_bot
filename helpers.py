@@ -48,7 +48,7 @@ def parse_response(response):
                 0
             ]["GeoObject"]["Point"]["pos"].split(" ")
             return (float(point[0]), float(point[1]))
-        except Exception as e:
+        except Exception:
             return None
 
 
